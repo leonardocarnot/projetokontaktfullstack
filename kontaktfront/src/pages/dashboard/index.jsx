@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import CardDashboard from "../../components/CardDashboard/CardDashboard";
 import api from "../../services/api";
 import { Container, Content } from "./styles";
@@ -82,11 +82,11 @@ function Dashboard({ authenticated }) {
         <Content>
           <div className="navigation">
             <nav>
-              <button>
+              <Link to="/dashboard">Meus contatos</Link>
+              <Link to="/profile">
                 <AiOutlineUser />
                 Meu perfil
-              </button>
-              <button>Meus contatos</button>
+              </Link>
               <button onClick={backLoginPage}>Sair</button>
             </nav>
           </div>

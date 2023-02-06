@@ -17,6 +17,50 @@ export const Content = styled.div`
   justify-content: flex-start;
   width: 100%;
   
+  .userProfile{
+    background: #1f1717;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    border-radius: 4px;
+    h2,span{
+      margin-bottom: 30px;
+    }
+    h2{
+      margin-top: 50px;
+    }
+  }
+  .profileButtons{
+    display: flex;
+    justify-content: center;
+    button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 48px;
+    background: #4fba6c;
+    border: 1.2182px solid #ffffff;
+    border-radius: 4.06066px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    margin: 50px
+
+  }
+  button:hover {
+    background-color: #679e76;
+    border: #3b413d;
+  }
+  }
+  
   .navigation{
     display: flex;
     flex-direction: column;
@@ -29,7 +73,7 @@ export const Content = styled.div`
         flex-direction: column;
     }
 
-    button,a{
+    button,a {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -205,5 +249,6 @@ export const FormContainer = styled.div`
     border: #3b413d;
   }
 
+  
   
 `;

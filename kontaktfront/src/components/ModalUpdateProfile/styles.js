@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appear = keyframes`
+from {
+    opacity: 0;
+}
+to{
+    opacity: 1;
+}
+`;
+
 
 export const Container = styled.div`
   display: flex;
@@ -6,110 +16,43 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
   min-height: 100vh;
-  height: 100%;
-  background: white;
+  height: auto;
+  background: none;
+
+.headerModal{
+  width: 100%;
+  display: flex;
+  align-content: flex-start;
+  align-items: fle;
+  justify-content: space-between;
+  
+  button{
+    width: 20px;
+    height: 20px;
+  }
+}
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  
-  .navigation{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #1f1717;
-    width: 200px;
-
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-
-    button,a{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    background: #1f1717;
-    border: 1px white;
-    border-style: solid none;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  button:hover {
-    background-color: #679e76;
-    border: #3b413d;
-  }
-  }
-  .ApplicationBody{
-    width: 100%;
-    height: 100vh;
-    background-color: #4fba6c;
-  }
-
-  .headerBody{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  .headerButtons{
-    display: flex;
-    flex-direction: row;
-
-    button{
-      margin-right: 20px;
-    }
-  }
-
-    button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 40px;
-    background: #1f1717;
-    border: 1px white;
-    border-style: solid none;
-    border-radius: 4px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #ffffff;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  button:hover {
-    background-color: #679e76;
-    border: #3b413d;
-  }
-  }
+  align-items: flex-start;
+  justify-content: space-around;
+  width: auto;
 `;
 
 export const FormContainer = styled.div`
   background: #363636;
+  height: auto;
   color: #58e67f;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  animation: ${appear} 1s;
   gap: 30px;
-  padding: 30px;
+  padding: 10px;
   
   .cadastro{
     display: flex;
@@ -163,7 +106,7 @@ export const FormContainer = styled.div`
   }
 
   input::placeholder {
-    color: black;
+    color: grey;
   }
 
   a {
@@ -205,5 +148,9 @@ export const FormContainer = styled.div`
     border: #3b413d;
   }
 
-  
+  img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 35px;
+  }
 `;

@@ -3,6 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import Dashboard from "../pages/dashboard";
 import PageLogin from "../pages/pagelogin";
 import PageRegister from "../pages/pageregister";
+import PageProfile from "../pages/profile";
+import Profile from "../pages/profile";
 
 
 function Routes() {
@@ -26,6 +28,9 @@ function Routes() {
             </Route>
             <Route exact path="/dashboard">
                 <Dashboard authenticated={authenticated}/>
+            </Route>
+            <Route exact path="/profile">
+                <PageProfile authenticated={authenticated}/>
             </Route>
         </Switch>
     )
