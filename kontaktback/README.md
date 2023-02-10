@@ -19,7 +19,7 @@ Visão geral do projeto, um pouco das tecnologias usadas.
 
 Diagrama ER da API definindo bem as relações entre as tabelas do banco de dados.
 
-![DER](der.png)
+![DER](relacionamentos.png)
 
 ---
 
