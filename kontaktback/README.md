@@ -9,7 +9,6 @@ Visão geral do projeto, um pouco das tecnologias usadas.
 - [TypeScript](https://www.typescriptlang.org/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [TypeORM](https://typeorm.io/)
-- [Yup](https://www.npmjs.com/package/yup)
 
 ---
 
